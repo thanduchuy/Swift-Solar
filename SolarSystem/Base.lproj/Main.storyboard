@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SolarSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="MCL-IL-jRr">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="cZM-v4-jtR">
+                                <rect key="frame" x="149.66666666666669" y="398.66666666666669" width="128.66666666666669" height="128.66666666666669"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKk-aW-U3f">
+                                <rect key="frame" x="149.66666666666669" y="398.66666666666669" width="128.66666666666669" height="128.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planet-earth" translatesAutoresizingMaskIntoConstraints="NO" id="Paa-xy-Bpg">
+                                        <rect key="frame" x="16.333333333333343" y="0.0" width="96" height="51.333333333333336"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Paa-xy-Bpg" secondAttribute="height" multiplier="15:8" id="4Wz-Tl-v4e"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Paa-xy-Bpg" firstAttribute="centerX" secondItem="bKk-aW-U3f" secondAttribute="centerX" id="4sU-jh-rM2"/>
+                                    <constraint firstItem="Paa-xy-Bpg" firstAttribute="width" secondItem="bKk-aW-U3f" secondAttribute="width" multiplier="0.75" id="Zgy-9C-GdM"/>
+                                    <constraint firstItem="Paa-xy-Bpg" firstAttribute="top" secondItem="bKk-aW-U3f" secondAttribute="top" id="mEy-5L-CST"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyR-rh-cKo">
+                                <rect key="frame" x="85.666666666666657" y="283.33333333333337" width="256.66666666666674" height="359.33333333333337"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="saturn" translatesAutoresizingMaskIntoConstraints="NO" id="94J-Yh-Igp">
+                                        <rect key="frame" x="76.999999999999972" y="0.0" width="102.66666666666666" height="54.666666666666664"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="94J-Yh-Igp" secondAttribute="height" multiplier="15:8" id="kGn-nj-f1t"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="94J-Yh-Igp" firstAttribute="top" secondItem="DyR-rh-cKo" secondAttribute="top" id="SYo-3G-pNK"/>
+                                    <constraint firstItem="94J-Yh-Igp" firstAttribute="width" secondItem="DyR-rh-cKo" secondAttribute="width" multiplier="0.4" id="i7G-OS-MD8"/>
+                                    <constraint firstItem="94J-Yh-Igp" firstAttribute="centerX" secondItem="DyR-rh-cKo" secondAttribute="centerX" id="mwV-FY-n45"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WFE-Cu-MCT">
+                                <rect key="frame" x="92" y="341" width="244" height="244"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jupiter" translatesAutoresizingMaskIntoConstraints="NO" id="TzE-z8-UE6">
+                                        <rect key="frame" x="73.333333333333343" y="0.0" width="97.333333333333343" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="TzE-z8-UE6" secondAttribute="height" multiplier="15:8" id="MUn-ku-77x"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="TzE-z8-UE6" firstAttribute="top" secondItem="WFE-Cu-MCT" secondAttribute="top" id="EAl-37-W37"/>
+                                    <constraint firstItem="TzE-z8-UE6" firstAttribute="width" secondItem="WFE-Cu-MCT" secondAttribute="width" multiplier="0.4" id="Wql-he-eAg"/>
+                                    <constraint firstItem="TzE-z8-UE6" firstAttribute="centerX" secondItem="WFE-Cu-MCT" secondAttribute="centerX" id="xVv-Ae-I8k"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bKk-aW-U3f" firstAttribute="height" secondItem="cZM-v4-jtR" secondAttribute="height" id="0hj-IY-8Xz"/>
+                            <constraint firstItem="DyR-rh-cKo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0vp-Ra-zJD"/>
+                            <constraint firstItem="cZM-v4-jtR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2x4-GW-scY"/>
+                            <constraint firstItem="DyR-rh-cKo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3h1-29-g9C"/>
+                            <constraint firstItem="bKk-aW-U3f" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3n2-Ci-d7P"/>
+                            <constraint firstItem="MCL-IL-jRr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="83v-Pz-Eqa"/>
+                            <constraint firstItem="bKk-aW-U3f" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DOv-ty-vwi"/>
+                            <constraint firstItem="cZM-v4-jtR" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="EkK-z0-q64"/>
+                            <constraint firstItem="DyR-rh-cKo" firstAttribute="width" secondItem="cZM-v4-jtR" secondAttribute="width" multiplier="2" id="J1j-mg-CFJ"/>
+                            <constraint firstItem="WFE-Cu-MCT" firstAttribute="height" secondItem="cZM-v4-jtR" secondAttribute="height" multiplier="1.9" id="KQP-Yx-dBo"/>
+                            <constraint firstItem="WFE-Cu-MCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L1d-HC-FmC"/>
+                            <constraint firstItem="cZM-v4-jtR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QGD-af-Kdw"/>
+                            <constraint firstItem="WFE-Cu-MCT" firstAttribute="width" secondItem="cZM-v4-jtR" secondAttribute="width" multiplier="1.9" id="Rup-ns-HMQ"/>
+                            <constraint firstItem="cZM-v4-jtR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.3" id="UvX-hj-szO"/>
+                            <constraint firstItem="bKk-aW-U3f" firstAttribute="width" secondItem="cZM-v4-jtR" secondAttribute="width" id="ZA1-lB-Llo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MCL-IL-jRr" secondAttribute="trailing" id="ZDa-GT-Jot"/>
+                            <constraint firstItem="DyR-rh-cKo" firstAttribute="height" secondItem="cZM-v4-jtR" secondAttribute="height" multiplier="2.8" id="Zo3-sn-gok"/>
+                            <constraint firstItem="WFE-Cu-MCT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eOS-pX-p00"/>
+                            <constraint firstItem="MCL-IL-jRr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="knY-5I-cTS"/>
+                            <constraint firstAttribute="bottom" secondItem="MCL-IL-jRr" secondAttribute="bottom" id="u2L-W7-Pbs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="constantTopPlanetEarth" destination="mEy-5L-CST" id="6bU-Ra-fPL"/>
+                        <outlet property="constantTopPlanetJupiter" destination="EAl-37-W37" id="udI-gq-rWe"/>
+                        <outlet property="constantTopPlanetSaturn" destination="SYo-3G-pNK" id="iLc-Zn-1Da"/>
+                        <outlet property="containerEarthView" destination="bKk-aW-U3f" id="ceL-WQ-44M"/>
+                        <outlet property="containerJupiterView" destination="WFE-Cu-MCT" id="Kzv-Ph-o4I"/>
+                        <outlet property="containerSaturnView" destination="DyR-rh-cKo" id="cmP-ci-Oo2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.77570093457942" y="54.427645788336939"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1920" height="1080"/>
+        <image name="jupiter" width="512" height="512"/>
+        <image name="planet-earth" width="512" height="512"/>
+        <image name="saturn" width="512" height="512"/>
+        <image name="sun" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
